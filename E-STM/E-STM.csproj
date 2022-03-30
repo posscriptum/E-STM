@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32CDCA4C-80D9-4CEE-AA36-1D7E8FACAF9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>E_STM</RootNamespace>
+    <AssemblyName>E-STM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ESTM-ICO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xceed.Words.NET, Version=1.3.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocX.1.3.0\lib\net40\Xceed.Words.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AndNew.cs" />
+    <Compile Include="BindingModelForComboBox.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="CapacityNew.cs" />
+    <Compile Include="ChangeText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeText.Designer.cs">
+      <DependentUpon>ChangeText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckAnswer.Designer.cs">
+      <DependentUpon>CheckAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceFileForOpenTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoiceFileForOpenTask.Designer.cs">
+      <DependentUpon>ChoiceFileForOpenTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoiceQuestionForTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoiceQuestionForTask.Designer.cs">
+      <DependentUpon>ChoiceQuestionForTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinNew.cs" />
+    <Compile Include="ConnectorNew.cs" />
+    <Compile Include="ConnectPoint.cs" />
+    <Compile Include="DataAndTime.cs" />
+    <Compile Include="DeleteAllElements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAllElements.Designer.cs">
+      <DependentUpon>DeleteAllElements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Description.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Description.Designer.cs">
+      <DependentUpon>Description.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiodNew.cs" />
+    <Compile Include="EdgeSelect.cs" />
+    <Compile Include="EditLanguage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditLanguage.Designer.cs">
+      <DependentUpon>EditLanguage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTheorQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTheorQuestions.Designer.cs">
+      <DependentUpon>EditTheorQuestions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElementNew.cs" />
+    <Compile Include="Fase.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePractQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePractQuestion.Designer.cs">
+      <DependentUpon>ChangePractQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroundNew.cs" />
+    <Compile Include="ImageAndPositionInDoc.cs" />
+    <Compile Include="Introduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Introduction.Designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LampNew.cs" />
+    <Compile Include="LampNewStatic.cs" />
+    <Compile Include="LoadPic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadPic.Designer.cs">
+      <DependentUpon>LoadPic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor3F.cs" />
+    <Compile Include="NotNew.cs" />
+    <Compile Include="OrNew.cs" />
+    <Compile Include="PassToDBwork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassToDBwork.Designer.cs">
+      <DependentUpon>PassToDBwork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordForReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordForReport.Designer.cs">
+      <DependentUpon>PasswordForReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlusTwentyFour.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Questions.Designer.cs">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionTest.cs" />
+    <Compile Include="Relay.cs" />
+    <Compile Include="Relay3F.cs" />
+    <Compile Include="RelayNC.cs" />
+    <Compile Include="RSNew.cs" />
+    <Compile Include="SerializationTemplateData.cs" />
+    <Compile Include="SetTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetTime.Designer.cs">
+      <DependentUpon>SetTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShurtCircuit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShurtCircuit.Designer.cs">
+      <DependentUpon>ShurtCircuit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SorceSignal.cs" />
+    <Compile Include="SRNew.cs" />
+    <Compile Include="Theoretical test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Theoretical test.Designer.cs">
+      <DependentUpon>Theoretical test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TheorQuestion.cs" />
+    <Compile Include="TimerOneSec.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeText.resx">
+      <DependentUpon>ChangeText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckAnswer.resx">
+      <DependentUpon>CheckAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoiceFileForOpenTask.resx">
+      <DependentUpon>ChoiceFileForOpenTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoiceQuestionForTask.resx">
+      <DependentUpon>ChoiceQuestionForTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAllElements.resx">
+      <DependentUpon>DeleteAllElements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Description.resx">
+      <DependentUpon>Description.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditLanguage.resx">
+      <DependentUpon>EditLanguage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTheorQuestions.resx">
+      <DependentUpon>EditTheorQuestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePractQuestion.resx">
+      <DependentUpon>ChangePractQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Introduction.resx">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadPic.resx">
+      <DependentUpon>LoadPic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassToDBwork.resx">
+      <DependentUpon>PassToDBwork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordForReport.resx">
+      <DependentUpon>PasswordForReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Questions.resx">
+      <DependentUpon>Questions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetTime.resx">
+      <DependentUpon>SetTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShurtCircuit.resx">
+      <DependentUpon>ShurtCircuit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theoretical test.resx">
+      <DependentUpon>Theoretical test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\config.ini" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_light_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_light_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_light_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Not_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal_1sec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal_1sec_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lamp_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal_1sec_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Digsignal_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_closed_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_closed_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DigConstSign_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DigConstSign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley_selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistor_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistor_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Resistor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JTI_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRTrig_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRTrig_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRTrig_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRTrig_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capasity_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capasity_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capasity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usource_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vsource_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wsource_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlackLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyCL_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyCL_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyCL_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyOPN_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyOPN_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyOPN_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyOPN_out2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyCL_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnRight_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnRight_in3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3F_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3F_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3F_in3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnLeft_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnLeft_in2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnLeft_in3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTurnRight_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diod_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diod_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer1s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer1s_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer1s_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer05s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer05s_in1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Timer05s_out1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle-3d-1560x736.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6984j9tYzmb_80_DX500_DY500_CX250_CY204.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5atTGIAOoib_80_DX382_DY382_CX191_CY63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5boRCCle9Qs_80_DX898_DY898_CX449_CY236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5bpTYHNvqsK_80_DX1292_DY1292_CX646_CY184.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5jioVWDr2E5_80_DX708_DY708_CX354_CY237.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5mGO6ziM5AN_80_DX142_DY142_CX71_CY63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5nvhqmc3SYk_80_DX184_DY184_CX92_CY31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5nw6iaO4ibd_80_DX88_DY88_CX42_CY44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5tgxs148MOo_80_DX126_DY126_CX58_CY63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5tVhhQotIHW_80_DX164_DY164_CX82_CY59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5wTs7TcX2WY_80_DX412_DY412_CX206_CY61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5YHL8owT1bR_80_DX470_DY470_CX235_CY202.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ZCeN0DqoN0_80_DX488_DY488_CX234_CY244.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ZlnFZkL4ES_80_DX328_DY328_CX164_CY87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5zMMjgSbk1n_80_DX128_DY128_CX61_CY64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ANKkLqFkcA_80_DX1036_DY1036_CX518_CY156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6cDIRmdukif_80_DX526_DY526_CX263_CY76.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6CrFaeRZ4ii_80_DX656_DY656_CX328_CY196.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6cUAPvKQQwO_80_DX536_DY536_CX268_CY128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6D1bDZ3yMTZ_80_DX490_DY490_CX245_CY70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6EBwRHiBZLx_80_DX970_DY970_CX485_CY309.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6efezEa366j_80_DX1134_DY1134_CX567_CY207.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6JhspLLs03j_80_DX410_DY410_CX205_CY176.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6NRDnG0bZRI_80_DX508_DY508_CX254_CY162.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6Ns64Dh5alT_80_DX280_DY280_CX140_CY123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6q37L7re9MZ_80_DX548_DY548_CX274_CY78.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6V52I61Z5I7_80_DX558_DY558_CX279_CY74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6Xme4zTjMZn_80_DX716_DY716_CX358_CY257.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6YH1lvRdMvr_80_DX168_DY168_CX84_CY55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65diTLPta6W_80_DX562_DY562_CX281_CY119.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6LrmL1OaiDP_80_DX888_DY888_CX444_CY228.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5giT7otZnug_80_DX300_DY300_CX150_CY93.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formuly1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shemy1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyOPN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReleyCL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vsource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley3FCL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reley3FOPN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Motor3FTR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RSTrig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SRTrig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\And.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wsource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ESTM-ICO.ico" />
+    <None Include="Resources\amplifire.png" />
+    <None Include="Resources\trigersjckr.png" />
+    <None Include="Resources\amplifire1.png" />
+    <None Include="Resources\shema1.png" />
+    <None Include="Resources\shema10.png" />
+    <None Include="Resources\shema2.png" />
+    <None Include="Resources\shema3.png" />
+    <None Include="Resources\shema4.png" />
+    <None Include="Resources\shema5.png" />
+    <None Include="Resources\shema6.png" />
+    <None Include="Resources\shema7.png" />
+    <None Include="Resources\shema8.png" />
+    <None Include="Resources\shema9.png" />
+    <None Include="Resources\shema11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
