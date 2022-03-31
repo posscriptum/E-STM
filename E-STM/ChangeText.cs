@@ -22,7 +22,7 @@ namespace E_STM
         private void ChangeText_Load(object sender, EventArgs e)
         {
             button1.Text = (Application.OpenForms[0] as Form1).TextProg[126];
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();
 
             comboBox1.Items.Clear();

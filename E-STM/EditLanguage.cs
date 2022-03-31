@@ -48,7 +48,7 @@ namespace E_STM
             button3.Text = (Application.OpenForms[0] as Form1).TextProg[131];
             button4.Text = (Application.OpenForms[0] as Form1).TextProg[116];
 
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();
             readDB();
         }

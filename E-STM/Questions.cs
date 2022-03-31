@@ -43,7 +43,7 @@ namespace E_STM
         private void fillListOfQuestion (List<TheorQuestion> list, string chapter, int numberOfQuestion)
         {
             //записть вопросов из БД
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();
 
             string NameOfTable;

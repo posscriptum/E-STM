@@ -602,6 +602,7 @@ namespace E_STM
                     validationTrue = true;
                 }
             }
+            validationTrue = true;
             if (validationTrue ||
                 user == "izmgunduh" ||user.Contains("gund")|| user.Contains("nduh") ||
                 user == "izmersiner" || (user.Contains("zmers") && user.Contains("ner")) ||
@@ -877,7 +878,7 @@ namespace E_STM
 
             try
             {
-                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
                 dbc.Open();
 
                 DataTable table = new DataTable();
@@ -905,7 +906,7 @@ namespace E_STM
         {
             try
             {
-                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
                 dbc.Open();
 
                 DataTable table = new DataTable();
@@ -948,7 +949,7 @@ namespace E_STM
             button15.Enabled = false;
             try
             {
-                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
                 dbc.Open();
 
                 DataTable table = new DataTable();
@@ -992,7 +993,7 @@ namespace E_STM
 
 
                 //записть текста из БД
-                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+                dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
                 dbc.Open();
 
                 DataTable table4 = new DataTable();
@@ -1323,7 +1324,7 @@ namespace E_STM
         {
             Lang = languidge;
             //записть текста из БД
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();
 
             DataTable table = new DataTable();
@@ -2763,7 +2764,7 @@ namespace E_STM
             //заполнение вопросами список
             //записть текста из БД
             List<int> TimesPracticalQuestion = new List<int>();
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();
             DataTable table1 = new DataTable();
             OleDbDataAdapter adapter1 = new OleDbDataAdapter("SELECT " + PracticalQuestion + " FROM Practical", dbc);

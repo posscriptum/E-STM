@@ -47,7 +47,7 @@ namespace E_STM
             groupBox7.Text = (Application.OpenForms[0] as Form1).TextProg[144] + " 5 " + (Application.OpenForms[0] as Form1).TextProg[145];
 
 
-            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.15.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
+            dbc = new OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;User ID=Admin;Data Source=" + Application.StartupPath + "\\qbdjti.accdb; Jet OLEDB:Database Password=ыфифлф");
             dbc.Open();          
 
             //заполнить список языков
